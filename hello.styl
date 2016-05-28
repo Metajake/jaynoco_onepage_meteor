@@ -1,0 +1,313 @@
+//IMPORTS
+//@import 'fonts'
+
+// VARIABLES
+materializeSmMdBreakPoint = 600px
+materializeMdLgBreakPoint = 1200px
+textColor = rgba(0, 0, 0, 0.87)
+darkGreyText = #7f7f7f
+
+// FUNCTIONS
+transition-fast()
+  transition: arguments 0.45s
+
+// STYLES -- GLOBAL ELEMENTS
+h1, h2, h3
+  transition-fast: font-size
+  font-weight:500
+  letter-spacing:1px
+h1.logo
+  display:inline
+  margin-left:10px
+  border-radius:25px
+  padding:0.2rem 1.35rem 0.5rem
+
+// STYLES -- UTILITY CLASSES
+.dark-grey
+  background-color:#404040
+  color:darkGreyText
+.normal
+  font-weight:normal
+.weight500-06
+  font-weight:500
+  letter-spacing:.6px
+.white.darken-1
+  background-color:#f2f2f2 !important
+.bottom-5-15
+  margin-bottom:5px
+.bottom-0
+  margin-bottom:0px
+.no-break
+  white-space: nowrap
+
+// STYLES -- PAGE AREAS
+.about a
+  color:textColor
+.contacting
+  text-decoration:underline
+.client-spacer
+  height:2.5rem
+.contact-info a
+  color: textColor
+  &:visited
+    color:textColor
+h2.quote
+  margin-bottom:.5rem
+  & a
+    color:textColor
+p.quoted
+  font-weight:500
+  letter-spacing: 1px
+  margin-top:.5rem
+h2.action
+  display:inline
+  border:6px solid #ffe608
+  background-color:white
+  padding:5px 7px
+  position: relative;
+.services h4 a
+  &:link, &:visited
+    text-decoration:underline
+    color:textColor
+div.circular
+  border-radius:50%
+  max-width:300px
+  margin:0 auto
+.box
+  max-width:300px
+  margin:0 auto
+.contact form
+  .mail-input
+    background-color: white
+    border: none
+  #message
+    min-height:175px
+  #submit
+    background-color:#66d548
+    border:none
+    color:white
+.mail-input:focus
+  border:none !important
+  box-shadow:none !important
+textarea:focus
+  outline:none
+::-webkit-input-placeholder
+  color: textColor
+:-moz-placeholder
+  color: textColor
+::-moz-placeholder
+  color: textColor
+:-ms-input-placeholder
+  color: textColor
+.input-pad
+  padding-left:9px
+  width:96%
+  margin-bottom:15px
+  input
+    margin-bottom:0
+#message
+  padding:.5rem 9px
+#submit
+  font-size:.9rem
+  letter-spacing:7px
+  padding: 7px 2px 7px 9px
+.credits
+  a
+    color: darkGreyText
+    text-decoration:underline
+  img
+    display:inline
+    width:30px
+    margin-right:.5rem
+  p
+    font-size:.8rem
+    color:darkGreyText
+
+// SCREEN SIZES
+@media (min-width:materializeSmMdBreakPoint)
+  p, h4
+    font-size:1rem
+  h1
+    font-size:1.6rem
+  h2
+    font-size:1.3rem
+  h3
+    font-size:1.2rem
+  h4
+    line-height:140%
+  .margBottom
+    margin-bottom:0
+  .no-break-med
+    white-space: nowrap
+  .section.padded
+    padding-top:5rem
+    padding-bottom:5rem
+  .header
+    padding-top:2.5rem
+  h2.intro
+    font-size:2rem
+    line-height:2.6rem
+    margin-bottom:5px
+  h2.action
+    top:-5.75rem
+  .broadcast
+    text-align:center
+    & h1
+      font-size:2.6rem
+  .about
+    h2
+      margin-top:0
+      margin-bottom:3rem
+    h3
+      margin-bottom:0
+    ul a
+      margin:.5rem 0 0
+  .portrait
+    width:75%
+    border:solid 6px white;
+  p.emphasis
+    margin-top:2.1rem
+  .clients img
+    width:110px
+  .testimonial
+    padding-top: 2.75rem
+    padding-bottom:1.25rem
+    & img.portrait
+      width:85%
+  h2.quote
+    font-size:1.8rem
+    margin-top:.25rem
+    line-height:125%
+  .box
+    width:100%
+  .services .padLeft
+    padding-left:0
+  .services h2
+    margin-bottom:0
+    letter-spacing:.5px
+  .col.shape
+    padding-top:4rem
+    margin-bottom:1rem
+  .shape h1
+    font-size: 1.8rem
+    line-height:145%
+  .teaches
+    margin-bottom:0
+    & p
+      margin:.2rem 0
+  .contact h1
+    margin-top:1rem
+  .input-field
+    margin-top:1.5rem
+  #message
+    margin-bottom:15px
+
+@media (min-width:materializeMdLgBreakPoint)
+  p, a, h4
+    font-size:1.15rem
+  h1
+    font-size:1.8rem
+  h2
+    font-size:1.45rem
+  h3
+    font-size:1.35rem
+  .broadcast h1
+    font-size: 3rem
+    line-height:115%
+  h2.intro
+    font-size:2.4rem
+    line-height:125%
+  .testimonial a
+    font-size:1.65rem
+    margin-top:.25rem
+    line-height:125%
+  .clients img
+    width:130px
+  .box, div.circular
+    max-width:275px
+  .contact form, .contact input
+      font-size:1.15rem
+  .credits a
+    font-size:.8rem
+  .bottom-5-15
+    margin-bottom:15px
+
+@media (max-width:materializeSmMdBreakPoint - 1)
+  p
+    font-size:1.2rem
+  h1
+    font-size: 2.2rem
+  h2
+    font-size:1.65rem
+  h3
+    font-size:1.4rem
+  h4
+    font-size:1.3rem
+    line-height:1.9rem
+  .section.padded
+    padding-top:5rem
+    padding-bottom:4.5rem
+  h2.intro
+    line-height:2.2rem
+  h2.quote
+    line-height:135%
+  p.quoted
+    font-size:1.1rem
+    margin-top:1rem
+    line-height:150%
+  h2.action
+    top: -6rem;
+  .section.header
+    margin-top:20px
+  .section.broadcast
+    padding-top: 0rem
+    padding-bottom:0rem
+    & h1
+      margin:1.8rem 0
+  .about
+      h1
+        margin-top: 1rem
+      ul li
+        a
+          font-size:1.2rem
+          margin: 4px 0
+          display:block
+        h3
+          margin:1.3rem 0 0 0
+  .portrait
+    border:solid 6px white
+    margin: 1rem 0
+  .emphasis
+    font-weight:500
+  .clients img
+    width:90px
+  .testimonial
+    padding-top:.35rem
+    padding-bottom:.05rem
+  .services h2
+    margin-bottom:.5rem
+  .contact h1, .clients h1
+    margin-bottom:4rem
+  .col.shape
+    padding-top:4rem
+    margin-bottom:0
+  .shape h1
+    line-height:120%
+  .box
+    width:90%
+  .teaches
+    margin-bottom: 10px
+    & p
+      margin:0
+  .contact form #message
+    font-size:1rem
+    margin-bottom:10px
+  #thankyou-message h2
+    margin-top:0
+  .input-field
+      margin:0
+  .credits
+    p
+      margin-bottom: .5rem
+    & .row
+      margin-bottom:0

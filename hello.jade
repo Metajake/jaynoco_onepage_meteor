@@ -1,0 +1,129 @@
+head
+  title JayNoCo
+  meta(name="viewport" content="width=device-width, initial-scale=1")
+  link(rel="icon" href="/images/favicon.png")
+
+body
+    +hello
+
+template(name="hello")
+    .section.header
+        .container
+            .row #[h1.logo.light-blue.white-text.center Jayno]
+            .row
+            .row.bottom-5-15
+                .col.s12.offset-m1.m10 #[h2.intro Hey, I'm Jacob North. I'm a super nice guy who develops awesome websites & teaches computer programming #[span.no-break to kids.]]
+            .row.contact-info
+                .col.m3.offset-m1 #[a(href="mailto:jacob@jayno.co") jacob@jayno.co]
+                .col.m3 #[a(href="tel:313-600-0358") 313 600 0358]
+                .col.m3 #[a(href="/media/jacobnorth_resume.pdf") resume]
+            .row.hide-on-small-only(style="height:1rem")
+    .section.broadcast.amber.darken-4.white-text
+        .container
+            .row.valign-wrapper.bottom-0
+                .col.s4.hide-on-med-and-up #[img.circle.portrait.responsive-img(src="/images/jake.png")]
+                .col.s8.offset-m1.m10
+                    h1 Let's make the internet #[span.no-break-med awesome together.]
+    .section.white.darken-1.padded
+        .container.about
+            .row
+                .col.s12.m4
+                    h1.bottom-0 About Me
+                .col.s12.m8
+                    p.emphasis I'm an educated, experienced, process driven website developer who helps people plan, design, & build websites. I specialize in front end development and love to work with other graphic designers. They are easy for YOU to update, modify, and sell #[span.no-break products through.]
+                    p  I am currently available for freelance, full time & teaching opportunities. You can contact me #[span.contacting here].
+                    //You can contact #[span.no-break me here.]
+            .row
+            .row
+                .col.m4.hide-on-small-only #[img.circle.portrait(src="/images/jake.png")]
+                .col.s12.m4
+                    h2 Experience
+                    ul
+                        li #[h3 Web Development] #[a(href="http://rightbrainnetworks.com") RightBrain Networks]
+                        li #[h3 User Interface] #[a(href="http://menloinnovations.com") Menlo Innovations]
+                        li #[h3 Education] #[a(href="http://gamestartschool.org/") GameStart]
+                .row.hide-on-med-and-up
+                .row.hide-on-med-and-up
+                .col.s12.m4
+                    h2 Education
+                    ul
+                        li #[h3 BFA] #[a(href="http://www.collegeforcreativestudies.edu/") College for Creative Studies]
+    .section.padded
+        .container.clients
+            h1 Past Clients
+            .row.hide-on-small-only.client-spacer
+            .row
+                .col.s6.m3.center
+                    a(href="http://menloinnovations.com") #[img(src="/images/menlo.png")]
+                    .client-spacer.hide-on-med-and-up
+                .col.s6.m3.center
+                    a(href="http://rightbrainnetworks.com") #[img(src="/images/rbn.png")]
+                    .client-spacer.hide-on-med-and-up
+                .col.s6.m3.center #[a(href="http://swisscroon.com") #[img(src="/images/swisscroon.png")]]
+                .col.s6.m3.center #[a(href="http://atozpediatrictherapy.com") #[img(src="/images/atoz.png")]]
+    .section.white.darken-1.testimonial
+        .container
+            .row
+                .col.offset-m1.m3.hide-on-small-only.right-align #[a(href="https://www.linkedin.com/in/jacobnorth") #[img.portrait.circle(src="/images/nate.png")]]
+                .col.s12.m8.l7
+                    h2.normal.quote #[a(href="https://www.linkedin.com/in/jacobnorth") ''Jacob is reliable and humane. Interface design, a firm grasp of programming languages, and people skills are what make him capable in a modern creative environment.'']
+                    p.quoted - Nate Aschenbach, Co-Founder & CEO at #[span.no-break GameStart School]
+    .section.padded
+        .container.services
+            h1(style="margin-bottom:0rem;") Services I Offer
+            .section
+              .row
+                  .col.s12.m6.l5
+                      .col.s10.offset-s1.shape
+                          .light-blue.white-text.circular.valign-wrapper
+                              h1.valign.center-align(style="width:100%") Website#[br]Development
+                      .col.s12.padLeft
+                          h2 Let's make some magic happen.
+                          h4 I build custom websites on the #[a(href="http://squarespace.com" target="_blank") Squarespace] , #[a(href="http://wordpress.com" target="_blank") Wordpress,] & #[a(href="http://meteor.com" target="_blank") Meteor] platforms using HTML, CSS, #[span.no-break & Javascript.]
+                  .col.s12.m6.l5.offset-l2
+                      .col.s10.offset-s1.valign-wrapper.shape
+                          .box.amber.darken-4.white-text.valign-wrapper.proportionate
+                              h1.center-align.valign(style="width:100%") Personal#[br]Tutoring
+                      .col.s12
+                          h2 Learn how to program awesome stuff.
+                          h4 I tutor kids and adults in the following programming languages:
+                          .row.teaches
+                              .col.s5.m4 #[p &bull; HTML]
+                              .col.s5.m4 #[p &bull; Javascript]
+                          .row.teaches
+                              .col.s5.m4 #[p &bull; CSS]
+                              .col.s5.m4 #[p &bull; Python]
+    .section.white.darken-1.padded
+        .container.contact
+            .row.center-align.bottom-0
+                h2.action Let's Work Together
+            .row
+                .col.s12.m4
+                    h1 Contact Me
+                .col.s11.m8
+                    form(id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyXtKU5ME4Vka5DU2JOhjc1emBA3AatrM0StwRSqDA0XpAx1-9t/exec")
+                      .input-field.white
+                        .input-pad
+                            input#name(class="mail-input" type="text" name="Name" placeholder="Your Name")
+                      .input-field.white
+                          .input-pad
+                            input#email(class="mail-input" type="email" name="Email" placeholder="Your Email")
+                      .input-field
+                          textarea#message(class="mail-input" name="Message" placeholder="Your Message")
+                      input#submit(type="submit" name="submit" value="SUBMIT")
+                    #thankyou-message(style="display:none;")
+                        h2 #[em Thanks] for contacting! I will get back to you soon.
+                    #email-invalid(style="display:none;")
+                        h2 Your email appears to be invalid. Please try again.
+    .section.dark-grey#to-animate
+        .container.credits
+            .row
+                .col.s4.offset-s1.m3
+                    .row.margBottom
+                        p Jaynoco llc &copy; 2016 #[br] #[a(href="mailto:jacob@jayno.co") jacob@jayno.co]
+                    .row
+                        a(href="https://twitter.com/Jaynoco") #[img(src="/images/twitter.png")]
+                        a(href="https://www.linkedin.com/in/jacobnorth") #[img(src="images/linkedin.png")]
+                        a(href="https://www.github.com/metajake") #[img(src="images/github.png")]
+                .col.s6.m6
+                    p This website was built by me using HTML, CSS, and the #[a(href="https://www.meteor.com/") Meteor] framework. Designed by #[a(href="http://unclemike.co") Uncle Mike]
